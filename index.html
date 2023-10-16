@@ -38,7 +38,9 @@
         var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("https://playground.babylonjs.com/textures/environment.dds", scene);
         var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
         
-        const modelUrl = "https://github.com/ExtendComunicaciones/ExtendComunicaciones.github.io/raw/main/";
+        //const modelUrl = "https://github.com/ExtendComunicaciones/ExtendComunicaciones.github.io/raw/main/";
+        //const modelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/";
+        const modelUrl = "https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/";
         const modelFile = "DamagedHelmet.glb";
         BABYLON.SceneLoader.Append(modelUrl, modelFile, scene, function (scene) {
              // do something with the scene
