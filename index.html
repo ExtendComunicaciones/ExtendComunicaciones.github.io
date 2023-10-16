@@ -38,13 +38,8 @@
         var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("https://playground.babylonjs.com/textures/environment.dds", scene);
         var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
         
-        //const modelUrl = "https://github.com/ExtendComunicaciones/ExtendComunicaciones.github.io/raw/main/";
-        //const modelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/";
-        const modelUrl = "https://github.com/ExtendComunicaciones/repo/blob/9e7c4cc06d19952d64da7470e89231d2437e83cc/";
-        const modelFile = "extendite.glb";
-        BABYLON.SceneLoader.Append(modelUrl, modelFile, scene, function (scene) {
-             // do something with the scene
-        });
+        const modelFile = "https://github.com/ExtendComunicaciones/ExtendComunicaciones.github.io/blob/d5d0e211190b9002db82207715e416e9f1b320f4/extendite.glb";
+        BABYLON.SceneLoader.Append("", modelFile, scene, function (scene) {});
              
         engine.runRenderLoop(function() {
             scene.render();
