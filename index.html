@@ -35,7 +35,7 @@
         light.intensity = 0.8;
         
         // create a default skybox with an environment.
-        var hdrTexture = BABYLON.CubeTexture("https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/cubemap/test",scene);
+        var hdrTexture = BABYLON.CubeTexture("https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/cubemap/1",scene);
         var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
         
         BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/", "extenditeHallo.glb", scene, function (loadedMeshes) {
