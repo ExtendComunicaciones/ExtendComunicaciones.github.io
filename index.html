@@ -36,15 +36,15 @@
         
         // create a default skybox with an environment.
         const skybox = BABYLON.MeshBuilder.CreateBox("skyBox", { size: 1000.0 }, scene);
-		const skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
-		skyboxMaterial.backFaceCulling = false;
-		skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/cubemap/1/1", scene);
-		skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
-		skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
-		skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
-		skybox.material = skyboxMaterial;
+	const skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
+	skyboxMaterial.backFaceCulling = false;
+	skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/cubemap/1/1", scene);
+	skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+	skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+	skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
+	skybox.material = skyboxMaterial;
 		
-		//loads the mesh into the enviroment
+	//loads the mesh into the enviroment
         BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/ExtendComunicaciones/ExtendComunicaciones.github.io/main/", "extenditeHallo.glb", scene, function (loadedMeshes) {
         loadedMeshes[0].position.set(0,0,0)
         });
